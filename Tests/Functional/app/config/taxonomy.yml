@@ -1,0 +1,30 @@
+symfony_cmf_taxonomy:
+    drivers:
+        phpcr_odm:
+            driver: phpcr_odm
+            options: ~
+        static:
+            driver: config
+            options: ~
+                
+    preset:
+        expenses:
+            type: hierarchical
+            title: Expenses
+            level_delimiter: >
+            taxonomy:
+                Equipement:
+                    Camping: ~
+                    Bike: ~
+                        Brakes: ~
+                        Innertube: ~
+                Consumeables:
+                Travel:
+                Services:
+        locomotion:
+            type: flat
+            title: Locomotion
+            taxonomy:
+                Train: ~
+                Plane: ~
+                Automobile: ~

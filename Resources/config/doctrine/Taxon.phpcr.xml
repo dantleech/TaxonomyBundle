@@ -1,0 +1,21 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/phpcr/doctrine-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <document 
+        name="Symfony\Cmf\Bundle\TaxonomyBundle\Persistance\PHPCR\Taxon" 
+        referenceable="true"
+        >
+
+        <nodename name="name"/>
+        <parentdocument name="parent"/>
+        <id name="id">
+            <generator strategy="parent"/>
+        </id>
+
+        <children fieldName="children"/>
+        <referrers fieldName="referrers"/>
+    </document>
+
+
+</doctrine-mapping>
+
